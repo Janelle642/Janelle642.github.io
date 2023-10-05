@@ -1,0 +1,147 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	width: 100%;
+	background-color: #FDF7F2;
+	color: #846D62
+}
+.navbar{
+	width: 100%;
+	height: 15vh;
+	margin: auto;
+	display: flex;
+	align-items: center;
+}
+.logo{
+	width: 200px;
+	cursor: pointer;
+	animation: header-load 300ms ease-in 300ms;
+	animation-fill-mode: forwards;
+	transform: translateY(-20px);
+	opacity: 0;
+}
+nav{
+	flex: 1;
+	padding-left: 30px;
+	animation: header-load 300ms ease-in 300ms;
+	animation-fill-mode: forwards;
+	transform: translateY(-20px);
+	opacity: 0;
+}
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 0px 30px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #846D62;
+}
+.content h1{
+	font-size: 50px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 100px;
+	margin-top: 24px;
+	margin-bottom: 15px;
+	color: #846D62
+}
+.content .sd{
+	color: #846D62
+}
+.content p{
+	font-size: 30px;
+	margin-bottom: 350px;
+	color: #A8A29C
+
+}
+.content{
+	margin-left: 10%;
+	margin-top: 10%;
+}
+.content .btn{
+	display: inline-block;
+	background: linear-gradient(45deg, #846D62, #A8A29C);
+	border-radius: 60px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #FDF7F2;
+	box-shadow: 3px 8px 22px rgba (94,28,68,0.15);
+}
+.feature-img{
+		height: 80%;
+		position: absolute;
+		bottom: 0;
+		right: 130px;
+}
+.social-links{
+		transform: rotate(-90deg);
+		position: absolute;
+		left: -80px;
+		bottom: 180px;
+}
+.social-links a{
+	text-decoration: none;
+	color: #846D62;
+	padding-right: 20px;
+	font-size: 14px;
+	animation: header-load 300ms ease-in 300ms;
+	animation-fill-mode: forwards;
+	transform: translateY(-20px);
+	opacity: 0;
+}
+h1,h4{
+	animation: header-load 300ms ease-in 300ms;
+	animation-fill-mode: forwards;
+	transform: translateY(-20px);
+	opacity: 0;
+}
+p{
+    font-family: 'Oxygen', sans-serif;
+	font-size: 20px;
+    animation: header-load 300ms ease-in 600ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+	
+}
+a{
+    animation-name: name-load;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in;
+    animation-delay: 900ms;
+    animation-fill-mode: forwards;
+    transform: translateX(-1000%);
+}
+.text-work{
+    color: #846D62;
+}
+@keyframes header-load {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes name-load{
+    0%{
+        transform: translateX(-1000%)
+    }
+
+    90%{
+        transform: translateX(50%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
